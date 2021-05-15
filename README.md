@@ -1,35 +1,8 @@
-## Nima Azbijari
+# Nima Azbijari
 
-I am a PhD student at Oregon State University studying Computer Science and Artificial Intelligence.
+I am a PhD student at Oregon State University studying Computer Science and Artificial Intelligence. I have worked on a variety of different projects ranging from speeding up graph computations for social network analysis to building deep learning models to classify cancer from genotypes of individuals. This website is meant to be a location for writing about my research and other projects.
 
-### About
+## Selected Projects
+1. Genome Deep Learning
+2. Structural Balance in R
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nimuh/nimuh.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
