@@ -5,4 +5,5 @@ I am a PhD student at Oregon State University studying Computer Science and Arti
 ## Selected Projects
 1. Genome Deep Learning
 2. Structural Balance in R
+3. Image Segmentation for Monocular Visual Odometry
 
