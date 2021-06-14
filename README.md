@@ -17,5 +17,8 @@ Created a software library in R for quickly computing structural balance in sign
 ### Image Segmentation for Monocular Visual Odometry
 Surveyed different approaches for image segmentation and how it helps with monocular visual odometry. (Link)
 
+# Daily Exploration
+## June 14, 2021: Exploring OOD detection with Likelihood Ratios
+
 
 
