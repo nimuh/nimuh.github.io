@@ -17,8 +17,9 @@ Created a software library in R for quickly computing structural balance in sign
 ### Image Segmentation for Monocular Visual Odometry
 Surveyed different approaches for image segmentation and how it helps with monocular visual odometry. (Link)
 
-# Daily Exploration
+# Daily Notes
 ## June 14, 2021: Exploring OOD detection with Likelihood Ratios
+Robust AI is becoming very popular due to the rising necessity of AI safety. This lead to some exploration around the topic and I stumbled upon this paper from Google a few years ago. They discuss an approach for detecting data outside of the distribution of the training data. This approach uses likelihood ratios to obtain probabilities for classes by only considering the semantic information in the input. 
 
 
 
