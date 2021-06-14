@@ -19,7 +19,7 @@ Surveyed different approaches for image segmentation and how it helps with monoc
 
 # Daily Notes
 ## June 14, 2021: Exploring OOD detection with Likelihood Ratios
-Robust AI is becoming very popular due to the rising necessity of AI safety. This lead to some exploration around the topic and I stumbled upon this paper from Google a few years ago. They discuss an approach for detecting data outside of the distribution of the training data. This approach uses likelihood ratios to obtain probabilities for classes by only considering the semantic information in the input. 
+Robust AI is becoming very popular due to the rising necessity of AI safety. This lead to some exploration around the topic and I stumbled upon this paper from Google from a few years ago. They discuss an approach for detecting data outside of the distribution of the training data. This approach uses likelihood ratios to obtain probabilities for classes by only considering the semantic information in the input. To explore this idea I built a toy model for the Fashion MNIST benchmark dataset and evaluate the confidence on the MNIST dataset. It is easy to notice that as the model performance improves on Fashion MNIST the probabilities outputed for MNIST begin to skew towards a fashion class. In other words, the model is learning about different clothing and then once it sees a number it is really confident that it is also a piece of clothing. 
 
 
 
