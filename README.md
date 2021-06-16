@@ -18,7 +18,7 @@ Created a software library in R for quickly computing structural balance in sign
 Surveyed different approaches for image segmentation and how it helps with monocular visual odometry. (Link)
 
 # Daily Notes
-## June 15, 2021: Embodied AI
+## June 15, 2021: Embodied AI (draft)
 The embodiment thesis states that cognitive processing is highly impacted by an agent's physical body. The field of Embodied AI has gained popularity in recent years due to exponential advances in computer vision, natural language processing, and robotics. Researchers believe that solutions to certain problems such as navigation and exploration in a real world setting can lead to embodied artificial intelligence. The community has defined specific problems such as point goal navigation and embodied question answering as the next step. Point goal navigation involves telling an agent to navigate to a specified point on the map. Embodied question answering builds on this (and other exploration and navigation tasks) where the agent is asked a question ("What color is the car?") and the agent has to find the car and respond appropriately. 
 
 Successful execution of these tasks is difficult and takes a big step away from Internet AI. Ultimately, the goal of artificial intelligence is to create machines that behave like humans do (or possibly better). A machine that can perform these tasks thus exhibits behavior closer to us. This post briefly talks about these research problems.
@@ -29,6 +29,11 @@ Point navigation seems straight forward: given a starting coordinate go to the d
 
 #### Object Navigation
 Object navigation provides more complexity. The agent cannot simply go to a specified point. It has to find an object in the environment. This also requires prior knowledge of the environment in order to know where to go. This prior knowledge can be obtained visual exploration of the environment.
+
+#### Vision and Language Navigation
+TODO
+
+
 
 
 ## June 14, 2021: Exploring OOD detection with Likelihood Ratios
