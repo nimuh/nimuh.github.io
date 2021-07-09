@@ -5,7 +5,7 @@ I am a PhD student at Oregon State University studying Computer Science and Arti
 ## Education
 - University of California, San Diego, B.Sc. Cognitive Science (2018)
 - University of Hawaii at Manoa, M.Sc. Computer Science (2021)
-- Oregon State University, Ph.D. Computer Science (Present)
+- Oregon State University, Ph.D. Artificial Intelligence (Ongoing)
 
 ## Selected Projects
 ### Genome Deep Learning
