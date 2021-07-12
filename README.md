@@ -8,14 +8,14 @@ I am a PhD student at Oregon State University studying Artificial Intelligence. 
 - Oregon State University, Ph.D. Artificial Intelligence (2025)
 
 ## Selected Projects
-### Genome Deep Learning
-Developed a deep learning model to classify 12 types of cancer from genotypes of individuals. (Link)
+### [Genome Deep Learning](https://github.com/nimuh/cancer-dl)
+Developed a deep learning model to classify 12 types of cancer from genotypes of individuals.
 
-### Structural Balance in R
-Created a software library in R for quickly computing structural balance in signed graphs. (Link)
+### [Structural Balance in R](https://github.com/nimuh/StructuralBalanceInR)
+Created a software library in R for quickly computing structural balance in signed graphs.
 
-### Image Segmentation for Monocular Visual Odometry
-Surveyed different approaches for image segmentation and how it helps with monocular visual odometry. (Link)
+### [Image Segmentation for Monocular Visual Odometry](https://github.com/nimuh/deep-learning)
+Surveyed different approaches for image segmentation and how it helps with monocular visual odometry. Implemented SegNet for CityScapes dataset.
 
 # Notes
 ## July 9, 2021: Language Models as Autoencoders
