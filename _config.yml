@@ -3,5 +3,6 @@ remote-theme: jekyll/minima
 theme: jekyll-theme-minimal
 
 title: Nima Azbijari
+logo: EFAF64B1-5AFA-4F50-8AD6-E940B91F5CEB_1_201_a.heic
 
 description: I am a PhD student at Oregon State University studying Artificial Intelligence. I have worked on a variety of different projects ranging from speeding up graph computations for social network analysis to building deep learning models to classify cancer from DNA. This website is meant to be a location for writing about my research and other projects.
