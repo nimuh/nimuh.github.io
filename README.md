@@ -19,7 +19,7 @@ Surveyed different approaches for image segmentation and how it helps with monoc
 
 # Notes
 ## July 9, 2021: Language Models as Autoencoders
-(Paper cite) discusses an interesting capability of transformers pretrained on a large language corpus. Specifically, they look at GPT-2 and how it this model can transfer to other modalities such as image classification. Surprisingly, the authors found performance in SOTA can be replicated with this model. As a result, this raises the question of what other types of non-language modality tasks can this model accomplish. To poke at this question, I became interested in observing how well GPT-2 can serve as a decoder for an image. Basically, can we reconstruct an input image with the same performance (or better) as an autoencoder for images?
+[This paper](https://arxiv.org/abs/2103.05247) discusses an interesting capability of transformers pretrained on a large language corpus. Specifically, they look at GPT-2 and how it this model can transfer to other modalities such as image classification. Surprisingly, the authors found performance in SOTA can be replicated with this model. As a result, this raises the question of what other types of non-language modality tasks can this model accomplish. To poke at this question, I became interested in observing how well GPT-2 can serve as a decoder for an image. Basically, can we reconstruct an input image with the same performance (or better) as an autoencoder for images?
 
 ### Preliminaries: What are transformers? How do we feed images to language models?
 
