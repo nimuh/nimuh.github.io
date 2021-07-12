@@ -5,13 +5,10 @@
 
 ## Selected Projects
 ### [Genome Deep Learning](https://github.com/nimuh/cancer-dl)
-Developed a deep learning model to classify 12 types of cancer from genotypes of individuals.
 
 ### [Structural Balance in R](https://github.com/nimuh/StructuralBalanceInR)
-Created a software library in R for quickly computing structural balance in signed graphs.
 
 ### [Image Segmentation for Monocular Visual Odometry](https://github.com/nimuh/deep-learning)
-Surveyed different approaches for image segmentation and how it helps with monocular visual odometry. Implemented SegNet for CityScapes dataset.
 
 # Notes
 ## July 9, 2021: Language Models as Autoencoders (Ongoing)
