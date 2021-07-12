@@ -5,7 +5,7 @@ I am a PhD student at Oregon State University studying Artificial Intelligence. 
 ## Education
 - University of California, San Diego, B.Sc. Cognitive Science (2018)
 - University of Hawaii at Manoa, M.Sc. Computer Science (2021)
-- Oregon State University, Ph.D. Artificial Intelligence (Ongoing)
+- Oregon State University, Ph.D. Artificial Intelligence (2025)
 
 ## Selected Projects
 ### Genome Deep Learning
@@ -18,7 +18,7 @@ Created a software library in R for quickly computing structural balance in sign
 Surveyed different approaches for image segmentation and how it helps with monocular visual odometry. (Link)
 
 # Notes
-## July 9, 2021: Experimenting with GPT-2 on other modalities
+## July 9, 2021: Language Models as Autoencoders
 (Paper cite) discusses an interesting capability of transformers pretrained on a large language corpus. Specifically, they look at GPT-2 and how it this model can transfer to other modalities such as image classification. Surprisingly, the authors found performance in SOTA can be replicated with this model. As a result, this raises the question of what other types of non-language modality tasks can this model accomplish. To poke at this question, I became interested in observing how well GPT-2 can serve as a decoder for an image. Basically, can we reconstruct an input image with the same performance (or better) as an autoencoder for images?
 
 ### Preliminaries: What are transformers? How do we feed images to language models?
