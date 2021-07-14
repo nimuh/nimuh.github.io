@@ -16,6 +16,8 @@
 
 ![Image](training-loss.png)
 
+The plot above shows some initial results. MSE Loss is the GPT-2 pretrained transformer with a learned linear input layer and convolutional output layer. CNN MSE Loss is the a standard CNN autoencoder. Both of these models were trained on MNIST for 30 epochs. Both models seem to converge though the transformer model does have a higher loss.
+
 ## June 15, 2021: Embodied AI (In progress)
 The embodiment thesis states that cognitive processing is highly impacted by an agent's physical body. The field of Embodied AI has gained popularity in recent years due to exponential advances in computer vision, natural language processing, and robotics. Researchers believe that solutions to certain problems such as navigation and exploration in a real world setting can lead to embodied artificial intelligence. The community has defined specific problems such as point goal navigation and embodied question answering as the next step. Point goal navigation involves telling an agent to navigate to a specified point on the map. Embodied question answering builds on this (and other exploration and navigation tasks) where the agent is asked a question ("What color is the car?") and the agent has to find the car and respond appropriately. 
 
