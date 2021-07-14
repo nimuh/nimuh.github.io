@@ -14,6 +14,8 @@
 ## July 9, 2021: Language Models as Autoencoders (Ongoing)
 [This paper](https://arxiv.org/abs/2103.05247) discusses an interesting capability of transformers pretrained on a large language corpus. Specifically, they look at GPT-2 and how it this model can transfer to other modalities such as image classification. Surprisingly, the authors found performance in SOTA can be replicated with this model. As a result, this raises the question of what other types of non-language modality tasks can this model accomplish. To poke at this question, I became interested in observing how well GPT-2 can serve as a decoder for an image. Basically, can we reconstruct an input image with the same performance (or better) as an autoencoder for images?
 
+![Image](training-loss.png)
+
 ## June 15, 2021: Embodied AI (In progress)
 The embodiment thesis states that cognitive processing is highly impacted by an agent's physical body. The field of Embodied AI has gained popularity in recent years due to exponential advances in computer vision, natural language processing, and robotics. Researchers believe that solutions to certain problems such as navigation and exploration in a real world setting can lead to embodied artificial intelligence. The community has defined specific problems such as point goal navigation and embodied question answering as the next step. Point goal navigation involves telling an agent to navigate to a specified point on the map. Embodied question answering builds on this (and other exploration and navigation tasks) where the agent is asked a question ("What color is the car?") and the agent has to find the car and respond appropriately. 
 
