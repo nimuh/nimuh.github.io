@@ -5,7 +5,7 @@
 
 
 ## Current Interests
-I am passionate about artificial intelligence and using it to solve hard problems. My current interests are in machine vision for automated driving and inverse reinforcement learning. Outside of working in this incredible field I enjoy surfing and playing chess.
+I am passionate about artificial intelligence and using it to solve hard problems. My current interests are in deep learning and computational biology. Outside of working in this incredible field I enjoy surfing and playing chess.
 
 ## Selected Projects
 ### [Genome Deep Learning](https://github.com/nimuh/cancer-dl)
