@@ -2,7 +2,7 @@
 - Oregon State University, Ph.D. Artificial Intelligence       (2021 - 2025)
 
 - University of Hawaii at Manoa, M.Sc. Computer Science        (2021)
-  - MS project on interpretable deep learning for genomic datasets
+  - Interpretable deep learning for genomic datasets
 
 - University of California, San Diego, B.Sc. Cognitive Science (2018)
   - Minor in Computer Science
