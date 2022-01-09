@@ -1,4 +1,7 @@
 ## Education
+- Oregon State University, Ph.D. Artificial Intelligence       (Present - 2026)
+  - Research focused on deep learning and computational biology
+ 
 - University of Hawaii at Manoa, M.Sc. Computer Science        (2021)
   - Interpretable deep learning for genomic datasets
 
