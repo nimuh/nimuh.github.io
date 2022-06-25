@@ -13,7 +13,7 @@
 
 
 ## Current Interests
-I am passionate about artificial intelligence and using it to solve hard problems. My interests are in deep learning and computational biology. I am currently a member of Dr. Maude David's Lab at Oregon State University where I am working on deep learning applications for contrastive learning on sequence data. Outside of working in this incredible field I enjoy surfing and playing chess.
+I am passionate about artificial intelligence and using it to solve hard problems. My interests are in deep learning and computational biology. I am currently a member of Dr. Maude David's Lab at Oregon State University where I am working on graph neural networks for knowledge transfer from biological databases. Outside of working in this incredible field I enjoy surfing, playing chess, rock climbing, and hiking.
 
 ## Selected Projects
 ### [Genome Deep Learning](https://github.com/nimuh/cancer-dl)
