@@ -1,3 +1,6 @@
+## Experience
+- Absci AI Lab, AI Scientist Intern                            (Present)
+  - Worked on building deep learning models for drug discovery research.
 ## Education
 - Oregon State University, Ph.D. Artificial Intelligence       (Present - 2026)
   - Research focused on deep learning and computational biology
