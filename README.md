@@ -3,10 +3,10 @@
   - Worked on building deep learning models for drug discovery research.
 ## Education
 - Oregon State University, Ph.D. Artificial Intelligence       (Present - 2026)
-  - Research focused on deep learning and computational biology
+  - Research focused on deep learning and computational biology. Advised by Dr. Maude David.
  
 - University of Hawaii at Manoa, M.Sc. Computer Science        (2021)
-  - Interpretable deep learning for genomic datasets
+  - Interpretable deep learning for genomic datasets. Advised by Dr. Mahdi Belcaid.
 
 - University of California, San Diego, B.Sc. Cognitive Science (2018)
   - Minor in Computer Science
