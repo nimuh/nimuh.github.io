@@ -1,5 +1,5 @@
 ## Experience
-- Absci AI Lab, AI Scientist Intern                            (Present)
+- Absci AI Lab, AI Scientist Intern                            (June 2022 - August 2022)
   - Worked on building deep learning models for drug discovery research.
 
 ## Education
@@ -14,7 +14,7 @@
 
 
 ## Current Interests
-I am passionate about artificial intelligence and using it to solve hard problems. My interests are in deep learning and computational biology. I am currently a member of Dr. Maude David's Lab at Oregon State University where I am working on graph neural networks for knowledge transfer from biological databases. Outside of working in this incredible field I enjoy surfing, playing chess, rock climbing, and hiking.
+I am passionate about artificial intelligence and using it to solve hard problems. My interests are in deep learning and computational biology. I am currently a member of Dr. Maude David's Lab at Oregon State University where I am working on protein language models as well as graph neural networks for knowledge transfer from biological databases. Outside of working in this incredible field I enjoy surfing, playing chess, rock climbing, and hiking.
 
 ## Selected Projects
 ### [Genome Deep Learning](https://github.com/nimuh/cancer-dl)
