@@ -223,25 +223,26 @@ p + p { margin-top: 14px; }
   50% { opacity: .35; }
 }
 
-/* ---------- Protein viewer ---------- */
+/* ---------- Protein image ---------- */
 .protein-wrap {
+  display: inline-block;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  position: relative;
-  height: 280px;
   background: var(--bg-elev);
-  margin-bottom: 2px;
+  margin-bottom: 4px;
+  width: 220px;
+}
+.protein-wrap img {
+  display: block;
+  width: 100%;
+  filter: brightness(0.88) contrast(1.05) saturate(0.9);
 }
 .protein-label {
-  position: absolute;
-  bottom: 12px;
-  right: 14px;
+  padding: 6px 10px 8px;
   font-family: "JetBrains Mono", monospace;
-  font-size: .68rem;
+  font-size: .65rem;
   color: var(--text-faint);
-  pointer-events: none;
-  z-index: 1;
 }
 
 /* ---------- Footer ---------- */
