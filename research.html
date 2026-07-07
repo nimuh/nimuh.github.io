@@ -28,6 +28,11 @@
       <p>Work from my Ph.D. and M.Sc., spanning protein language models, graph neural networks, and genomic deep learning.</p>
     </header>
 
+    <div class="protein-wrap">
+      <div id="ngl-research" style="width:100%;height:100%;"></div>
+      <span class="protein-label">p53 tumor suppressor · PDB 2OCJ</span>
+    </div>
+
     <section id="research">
       <div class="cards">
         <div class="card-static">
@@ -129,8 +134,18 @@
     </footer>
   </div>
 
+  <script src="https://unpkg.com/ngl@0.10.4/dist/ngl.js"></script>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var stage = new NGL.Stage("ngl-research", { backgroundColor: "#0b0c0e" });
+      stage.loadFile("rcsb://2OCJ", { defaultRepresentation: false }).then(function (o) {
+        o.addRepresentation("cartoon", { colorScheme: "uniform", color: "#5eead4", opacity: 0.9 });
+        o.autoView();
+      });
+      window.addEventListener("resize", function () { stage.handleResize(); });
+    });
   </script>
 </body>
 </html>

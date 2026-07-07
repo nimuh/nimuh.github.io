@@ -223,6 +223,27 @@ p + p { margin-top: 14px; }
   50% { opacity: .35; }
 }
 
+/* ---------- Protein viewer ---------- */
+.protein-wrap {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: relative;
+  height: 280px;
+  background: var(--bg-elev);
+  margin-bottom: 2px;
+}
+.protein-label {
+  position: absolute;
+  bottom: 12px;
+  right: 14px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: .68rem;
+  color: var(--text-faint);
+  pointer-events: none;
+  z-index: 1;
+}
+
 /* ---------- Footer ---------- */
 footer {
   padding: 40px 0 60px;
