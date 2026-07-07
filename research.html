@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Nima Azbijari</title>
+  <meta name="description" content="Research by Nima Azbijari — protein language models, graph neural networks, and computational biology." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a class="brand" href="index.html">Nima Azbijari</a>
+      <div class="links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="research.html" class="active">Research</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <header class="page-header">
+      <h1>Research</h1>
+      <p>Work from my Ph.D. and M.Sc., spanning protein language models, graph neural networks, and genomic deep learning.</p>
+    </header>
+
+    <section id="current">
+      <div class="section-title">Current</div>
+      <div class="cards">
+        <div class="card-static">
+          <div class="status"><span class="dot"></span>ongoing · Oregon State University</div>
+          <h3>Protein Language Models</h3>
+          <p>
+            Large-scale language models pre-trained on protein sequences have shown remarkable ability to capture
+            evolutionary and structural information. My current work investigates how these representations can
+            be adapted and fine-tuned for downstream tasks in computational biology — particularly in contexts
+            where labeled data is scarce.
+          </p>
+          <div class="tags">
+            <span class="tag">protein LMs</span>
+            <span class="tag">transfer learning</span>
+            <span class="tag">computational biology</span>
+          </div>
+        </div>
+
+        <div class="card-static">
+          <div class="status"><span class="dot"></span>ongoing · Oregon State University</div>
+          <h3>Graph Neural Networks for Biological Knowledge Transfer</h3>
+          <p>
+            Biological databases encode rich, structured knowledge about proteins, pathways, and interactions.
+            I am developing graph neural network frameworks that can leverage this structured knowledge to
+            improve model performance and generalization, particularly for tasks where experimental labels
+            are expensive or limited.
+          </p>
+          <div class="tags">
+            <span class="tag">GNNs</span>
+            <span class="tag">knowledge graphs</span>
+            <span class="tag">drug discovery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="past">
+      <div class="section-title">Past</div>
+      <div class="cards">
+        <a class="card" href="https://drive.google.com/file/d/1cu25Det7OxyFogoY4xCjai3EWOHDV90n/view?usp=sharing" target="_blank" rel="noopener">
+          <div class="card-head">
+            <h3>Deep Learning Interpretability for Genomics</h3>
+            <span class="arrow">↗</span>
+          </div>
+          <p>
+            M.Sc. thesis at the University of Hawaiʻi at Mānoa (2021). I tested whether a classifier trained
+            on genomic data encodes class similarity in its learned representations — experimenting on both
+            simulated and real data from The Cancer Genome Atlas. By analyzing the learned parameters directly,
+            I explored whether neural networks can surface biologically meaningful structure beyond their
+            primary classification objective.
+          </p>
+          <div class="tags">
+            <span class="tag">interpretability</span>
+            <span class="tag">genomics</span>
+            <span class="tag">representation learning</span>
+          </div>
+        </a>
+
+        <a class="card" href="https://github.com/nimuh/cancer-dl" target="_blank" rel="noopener">
+          <div class="card-head">
+            <h3>Cancer Risk Prediction from Genotype</h3>
+            <span class="arrow">↗</span>
+          </div>
+          <p>
+            Multi-cancer risk prediction from individual genotype data using The Cancer Genome Atlas.
+            A standard feed-forward network failed to generalize; the best-performing model was an
+            encoder-based architecture that jointly learns a latent representation and a classifier.
+            Analysis revealed deep entanglement between cancer types in the latent space, motivating
+            further interpretability work on which genomic loci drive classification.
+          </p>
+          <div class="tags">
+            <span class="tag">deep learning</span>
+            <span class="tag">genomics</span>
+            <span class="tag">encoder architectures</span>
+          </div>
+        </a>
+
+        <a class="card" href="https://github.com/nimuh/deep-learning" target="_blank" rel="noopener">
+          <div class="card-head">
+            <h3>Image Segmentation for Monocular Visual Odometry</h3>
+            <span class="arrow">↗</span>
+          </div>
+          <p>
+            Motivated by a vehicle-speed prediction challenge, this survey and implementation project
+            explored scene segmentation as a route to better visual odometry. I surveyed classical
+            segmentation approaches and fully implemented <a href="https://arxiv.org/abs/1511.00561" target="_blank" rel="noopener">SegNet</a>
+            in PyTorch, training on a GTX 1660 Super with Weights &amp; Biases for experiment tracking.
+          </p>
+          <div class="tags">
+            <span class="tag">computer vision</span>
+            <span class="tag">segmentation</span>
+            <span class="tag">PyTorch</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> Nima Azbijari</span>
+      <span>Built with care · <a href="https://github.com/nimuh/nimuh.github.io" target="_blank" rel="noopener">source</a></span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
