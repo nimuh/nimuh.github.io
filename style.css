@@ -1,12 +1,12 @@
 :root {
-  --bg: #0b0c0e;
-  --bg-elev: #131519;
-  --border: #24272e;
-  --text: #e8e9ec;
-  --text-dim: #a1a5ad;
-  --text-faint: #6b6f78;
-  --accent: #5eead4;
-  --accent-dim: rgba(94, 234, 212, 0.12);
+  --bg: #1e1e1e;
+  --bg-elev: #262626;
+  --border: #363636;
+  --text: #dadada;
+  --text-dim: #b3b3b3;
+  --text-faint: #7a7a7a;
+  --accent: #a78bfa;
+  --accent-dim: rgba(167, 139, 250, 0.14);
   --radius: 14px;
   --maxw: 720px;
 }
@@ -22,7 +22,7 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
-  background-image: radial-gradient(circle at 50% -10%, rgba(94, 234, 212, 0.06), transparent 45%);
+  background-image: radial-gradient(circle at 50% -10%, rgba(167, 139, 250, 0.07), transparent 45%);
   background-repeat: no-repeat;
 }
 
@@ -41,7 +41,7 @@ nav {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(10px);
-  background: rgba(11, 12, 14, 0.72);
+  background: rgba(30, 30, 30, 0.78);
   border-bottom: 1px solid var(--border);
 }
 nav .wrap {
@@ -148,8 +148,8 @@ p + p { margin-top: 14px; }
   transition: border-color .2s ease, transform .2s ease, background .2s ease;
 }
 .card:hover {
-  border-color: rgba(94, 234, 212, 0.4);
-  background: #16191e;
+  border-color: rgba(167, 139, 250, 0.45);
+  background: #2c2c2c;
   transform: translateY(-2px);
   opacity: 1;
 }
@@ -192,7 +192,7 @@ p + p { margin-top: 14px; }
   font-size: .7rem;
   color: var(--accent);
   background: var(--accent-dim);
-  border: 1px solid rgba(94, 234, 212, 0.18);
+  border: 1px solid rgba(167, 139, 250, 0.22);
   padding: 3px 9px;
   border-radius: 999px;
 }
@@ -206,7 +206,7 @@ p + p { margin-top: 14px; }
   font-size: .7rem;
   color: var(--accent);
   background: var(--accent-dim);
-  border: 1px solid rgba(94, 234, 212, 0.18);
+  border: 1px solid rgba(167, 139, 250, 0.22);
   padding: 3px 10px;
   border-radius: 999px;
   margin-bottom: 14px;
