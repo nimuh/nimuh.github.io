@@ -231,6 +231,91 @@ p + p { margin-top: 14px; }
 }
 @media (max-width: 560px) { .hero-dna { display: none; } }
 
+/* ---------- Project page ---------- */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .85rem;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+.back-link:hover { color: var(--accent); opacity: 1; }
+
+.meta-line {
+  font-size: .9rem;
+  color: var(--text-dim);
+  margin-top: 6px;
+}
+.meta-line .authors { color: var(--text); }
+
+.pill-links { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
+.pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: .82rem;
+  color: var(--text-dim);
+  transition: border-color .18s ease, color .18s ease;
+}
+.pill-link:hover { border-color: rgba(167, 139, 250, 0.45); color: var(--text); opacity: 1; }
+
+.prose p { color: var(--text-dim); font-size: .98rem; }
+.prose p + p { margin-top: 16px; }
+.prose strong { color: var(--text); font-weight: 600; }
+
+.tldr {
+  background: var(--accent-dim);
+  border: 1px solid rgba(167, 139, 250, 0.22);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+}
+.tldr p { color: var(--text); margin: 0; font-size: .98rem; line-height: 1.6; }
+
+/* Figures */
+.figure {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 26px 24px 18px;
+  margin-top: 8px;
+}
+.figure svg, .figure img { display: block; max-width: 100%; margin: 0 auto; }
+.figure img { border-radius: 8px; }
+.figcaption {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  font-size: .82rem;
+  color: var(--text-faint);
+  line-height: 1.55;
+}
+.figcaption b { color: var(--text-dim); font-weight: 600; }
+
+/* Stat callouts */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+}
+.stat {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.stat .num {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  color: var(--accent);
+}
+.stat .lbl { margin-top: 4px; font-size: .82rem; color: var(--text-dim); line-height: 1.45; }
+
 /* ---------- Footer ---------- */
 footer {
   padding: 40px 0 60px;

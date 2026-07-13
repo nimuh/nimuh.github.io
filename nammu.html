@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nammu — Nima Azbijari</title>
+  <meta name="description" content="Nammu: a Mamba-based state space foundation model for metagenomic contextualization of proteins." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <div style="display:flex; align-items:center; gap:28px;">
+        <a class="brand" href="index.html">Nima Azbijari</a>
+        <div class="links">
+          <a href="research.html" class="active">Research</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <header class="page-header">
+      <a class="back-link" href="research.html">← Research</a>
+      <h1>Nammu</h1>
+      <p style="margin-top:6px;">A Mamba-based state space foundation model for metagenomic contextualization of proteins.</p>
+      <div class="meta-line">
+        <span class="authors">Nima Azbijari, Jacob H. Wynne, Maude David, Andrew R. Thurber</span> · bioRxiv, 2026
+      </div>
+      <div class="pill-links">
+        <a class="pill-link" href="https://www.biorxiv.org/content/10.64898/2026.07.07.736993v1" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Read the preprint
+        </a>
+      </div>
+    </header>
+
+    <section>
+      <div class="tldr">
+        <p>
+          <strong>Nammu</strong> is a 167M-parameter, mixed-modality foundation model built on the Mamba
+          state space architecture. Because it scales <strong>linearly</strong> with sequence length rather
+          than quadratically like transformers, it can read long metagenomic contigs — spanning many coding
+          and non-coding regions — at a 20K-token context. It outperforms the comparable gLM2 transformer on
+          both taxonomy and function prediction, despite training on fewer tokens.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">The problem</div>
+      <div class="prose">
+        <p>
+          Since metagenomics — the culture-free sequencing of microbial community genomes — took off around
+          2011, sequence data has grown more than <strong>500-fold</strong> across ecosystems. Annotation has
+          not kept pace: over <strong>half</strong> of all sequences still lack a confident functional
+          assignment, leaving large gaps in our understanding of microbial processes central to planetary and
+          human health.
+        </p>
+        <p>
+          Genomic language models have started to close this gap, but most state-of-the-art models are
+          transformers. The quadratic cost of attention caps how long a sequence they can read, so they
+          capture only a fraction of an assembled metagenomic sequence and cannot reason over broad context
+          across multiple coding and non-coding regions.
+        </p>
+      </div>
+      <div class="figure" style="margin-top:22px;">
+        <svg width="560" height="260" viewBox="0 0 560 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Compute scaling: transformer quadratic versus state space linear">
+          <!-- axes -->
+          <line x1="70" y1="210" x2="520" y2="210" stroke="#4a4a4a" stroke-width="1.5"/>
+          <line x1="70" y1="210" x2="70" y2="30" stroke="#4a4a4a" stroke-width="1.5"/>
+          <text x="295" y="245" fill="#7a7a7a" font-family="Inter, sans-serif" font-size="12" text-anchor="middle">sequence length →</text>
+          <text x="34" y="120" fill="#7a7a7a" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" transform="rotate(-90 34 120)">compute / memory →</text>
+          <!-- transformer O(n^2) -->
+          <path d="M70,210 Q360,205 470,40" stroke="#e06c75" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <text x="472" y="36" fill="#e06c75" font-family="JetBrains Mono, monospace" font-size="12">Transformer O(n²)</text>
+          <!-- SSM O(n) -->
+          <path d="M70,210 L510,150" stroke="#a78bfa" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <text x="380" y="140" fill="#a78bfa" font-family="JetBrains Mono, monospace" font-size="12">Nammu · SSM O(n)</text>
+        </svg>
+        <div class="figcaption">
+          <b>Why a state space model.</b> Transformer attention grows quadratically with sequence length,
+          so context is quickly capped. Mamba-style state space models grow linearly, making long metagenomic
+          contigs tractable. <i>(Schematic.)</i>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">The model</div>
+      <div class="prose">
+        <p>
+          Nammu is a bidirectional encoder trained on the <strong>OpenMetaGenomic (OMG)</strong> corpus at a
+          20K context length using a two-stage curriculum: first on 64M protein sequences, then on 32M
+          mixed-modality metagenomic contigs. This lets a single model reason jointly over proteins and the
+          genomic context they sit in.
+        </p>
+      </div>
+      <div class="figure" style="margin-top:22px;">
+        <svg width="560" height="150" viewBox="0 0 560 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two-stage training curriculum">
+          <!-- stage 1 -->
+          <rect x="10" y="45" width="150" height="60" rx="10" fill="#262626" stroke="#363636"/>
+          <text x="85" y="72" fill="#dadada" font-family="Inter, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Stage 1</text>
+          <text x="85" y="90" fill="#b3b3b3" font-family="Inter, sans-serif" font-size="11" text-anchor="middle">64M protein seqs</text>
+          <!-- arrow -->
+          <line x1="168" y1="75" x2="198" y2="75" stroke="#a78bfa" stroke-width="2"/>
+          <path d="M198,75 l-7,-4 v8 z" fill="#a78bfa"/>
+          <!-- stage 2 -->
+          <rect x="205" y="45" width="150" height="60" rx="10" fill="#262626" stroke="#363636"/>
+          <text x="280" y="72" fill="#dadada" font-family="Inter, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Stage 2</text>
+          <text x="280" y="90" fill="#b3b3b3" font-family="Inter, sans-serif" font-size="11" text-anchor="middle">32M mixed contigs</text>
+          <!-- arrow -->
+          <line x1="363" y1="75" x2="393" y2="75" stroke="#a78bfa" stroke-width="2"/>
+          <path d="M393,75 l-7,-4 v8 z" fill="#a78bfa"/>
+          <!-- model -->
+          <rect x="400" y="35" width="150" height="80" rx="10" fill="rgba(167,139,250,0.14)" stroke="rgba(167,139,250,0.5)"/>
+          <text x="475" y="65" fill="#a78bfa" font-family="Inter, sans-serif" font-size="14" font-weight="700" text-anchor="middle">Nammu</text>
+          <text x="475" y="83" fill="#b3b3b3" font-family="Inter, sans-serif" font-size="11" text-anchor="middle">167M params</text>
+          <text x="475" y="98" fill="#b3b3b3" font-family="Inter, sans-serif" font-size="11" text-anchor="middle">20K context</text>
+        </svg>
+        <div class="figcaption">
+          <b>Curriculum training.</b> A bidirectional Mamba encoder is trained first on proteins, then on
+          mixed-modality metagenomic contigs from the OMG corpus.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Results</div>
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="num">167M</div>
+          <div class="lbl">parameters</div>
+        </div>
+        <div class="stat">
+          <div class="num">20K</div>
+          <div class="lbl">token context length</div>
+        </div>
+        <div class="stat">
+          <div class="num">Every</div>
+          <div class="lbl">taxonomic level beats gLM2 on CAMI marine</div>
+        </div>
+        <div class="stat">
+          <div class="num">−37%</div>
+          <div class="lbl">fewer training tokens than gLM2</div>
+        </div>
+      </div>
+      <div class="prose" style="margin-top:20px;">
+        <p>
+          Against gLM2 — a mixed-modality transformer trained on the same OMG corpus with 37% more tokens —
+          Nammu wins at <strong>every taxonomic level</strong> on taxonomy inference over a marine dataset
+          from the Critical Assessment of Metagenome Interpretation (CAMI). On function, Nammu also
+          outperforms gLM2 (150M) at KEGG Orthology prediction in deep-sea metagenome-assembled genomes.
+        </p>
+      </div>
+    </section>
+
+    <!--
+      To embed the actual figures from the paper, drop the image files into a
+      figures/ folder and uncomment a block like this per figure:
+
+      <section>
+        <div class="figure">
+          <img src="figures/nammu-fig1.png" alt="Nammu Figure 1" />
+          <div class="figcaption"><b>Figure 1.</b> Caption text here.</div>
+        </div>
+      </section>
+    -->
+
+    <footer>
+      <span>© <span id="year"></span> Nima Azbijari</span>
+      <span>Built with care · <a href="https://github.com/nimuh/nimuh.github.io" target="_blank" rel="noopener">source</a></span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
