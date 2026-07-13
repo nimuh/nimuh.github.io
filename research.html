@@ -45,8 +45,27 @@
     <section id="research">
       <div class="cards">
         <div class="card-static">
-          <div class="status"><span class="dot"></span>Under Review · NeurIPS 2026</div>
-          <h3>Coming Soon</h3>
+          <h3>Nammu</h3>
+          <p style="margin-top:8px;">
+            A mixed-modality, Mamba-based foundation model for metagenomic contextualization of proteins.
+            Where most state-of-the-art genomic language models rely on transformers — whose quadratic
+            attention caps sequence length and captures only a fraction of assembled metagenomic sequences —
+            Nammu uses a state space architecture that scales linearly with length, enabling modeling of long
+            contigs spanning multiple coding and non-coding regions. With 167M parameters, it is a
+            bidirectional encoder trained on the OpenMetaGenomic (OMG) corpus at a 20K context length using a
+            curriculum strategy: first on 64M protein sequences, then on 32M mixed-modality contigs. Nammu
+            outperforms the gLM2 transformer at every taxonomic level on the CAMI marine benchmark and on KEGG
+            Orthology prediction in deep-sea metagenome-assembled genomes.
+          </p>
+          <div class="tags">
+            <span class="tag">state space models</span>
+            <span class="tag">Mamba</span>
+            <span class="tag">metagenomics</span>
+            <span class="tag">long-context</span>
+          </div>
+          <div style="margin-top:12px; font-size:.82rem; color:var(--text-faint);">
+            Preprint: <a href="https://www.biorxiv.org/content/10.64898/2026.07.07.736993v1" target="_blank" rel="noopener">biorxiv ↗</a>
+          </div>
         </div>
 
         <div class="card-static">
